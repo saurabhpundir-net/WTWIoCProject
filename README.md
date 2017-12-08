@@ -1,2 +1,2 @@
-# WTWIoCProject
-This repository is created to submit project for sharing work as assignment. This project contains simple application related to IOC &amp; xUnit 
+# WillisTowersWatsonProject
+This repository is created to submit project for Willis Towers Watson. This project contains simple application related to IOC &amp; xUnity

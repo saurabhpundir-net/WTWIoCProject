@@ -1,0 +1,64 @@
+@model WTW.WebApp.ViewModels.DriverViewModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>DriverViewModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DriverId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DriverId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LicenseState)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LicenseState)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LicenseNumber)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LicenseNumber)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.YearsOfExperience)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.YearsOfExperience)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LicenseIssueDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LicenseIssueDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LicenseExpiry)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LicenseExpiry)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            <a asp-action="Index">Back to List</a>
+        </div>
+    </form>
+</div>

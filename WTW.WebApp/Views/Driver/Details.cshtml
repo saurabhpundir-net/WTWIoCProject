@@ -1,0 +1,53 @@
+@model WTW.WebApp.ViewModels.DriverViewModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>DriverViewModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LicenseState)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LicenseState)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LicenseNumber)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LicenseNumber)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.YearsOfExperience)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.YearsOfExperience)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LicenseIssueDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LicenseIssueDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LicenseExpiry)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LicenseExpiry)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
